@@ -1,4 +1,9 @@
 #!/bin/bash
+
+#/etc/crontab
+#30 0 12,28 * * root hd_smart_dig.sh
+#30 6 * * 1 root hd_smart_report.sh
+
 email=`cat /etc/default/admin_email`
 if [ "a$email" == "a" ] ; then
  echo null
